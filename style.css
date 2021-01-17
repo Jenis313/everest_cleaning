@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    width: 80%;
+    margin:auto;
+}
+header{
+    display: flex;
+    align-items:center;
+    background-color: #8FB399;
+    color: white;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+header .title{
+    width: 35%;
+    padding: 1em 3em;
+    font-size: 1.5em;
+}
+header .title h1 span{
+    color:#E6FFED;
+}
+header nav{
+    width: 55%;
+
+}
+nav ul li{
+    width: 18%;
+    float: left;
+    list-style-type: none;
+    text-align: right;
+    padding: 1em;
+    /* margin: 1em; */
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+}
+ .call-to-action a{
+    padding: 7px 14px;
+    background-color: #FF8900;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    font-size: 1.1em;
+
+}
+.showcase{
+    height: 70vh;
+    background: url(img/pexels-mark-mccammon-2724749.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment:fixed;
+    background-size: cover;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+  
+}
+.showcase .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.heading{
+    width: 85%;
+}
+.heading h2{
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.heading p{
+    font-size: 1.9em;
+    color: #eee;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.services{
+    margin: 140px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.service{
+    width: 31%;
+}
+.service h3{
+    font-size: 1.8em;
+    margin: .4em auto;
+}
+.service p{
+    font-size: 1.1em;
+    line-height: 1.2em;
+}
+.call-to-action-two{
+    background-color: #8FB399;
+    color: #fff;
+    padding: 100px 0;
+}
+.call-to-action-two .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.call-to-action-two .container h5{
+width: 78%;
+font-size: 2.9rem;
+}
+.about-us{
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us .about-left{
+    width: 66%;
+}
+.about-left h3{
+    font-size: 2.4rem;
+    line-height: 1.5em;
+}
+.about-us p{
+    font-size: 1.1rem;
+    line-height: 1.2em;
+    font-weight: 500;
+    text-align: justify;
+}
+.about-us .about-right{
+    width: 30%;
+}
+.our-work{
+    background-color: #8FB399;
+    color:#fff;
+}
+.our-work .container{
+    padding: 100px 0;
+}
+.our-work .container h3{
+    font-size: 2.4rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.work img{
+    width: 40%;
+}
+.work-card1, .work-card2, .work-card3{
+    width: 50%;
+}
+.work h5{
+    font-size: 1.5em;
+    line-height: 1.4em;
+}
+.work p{
+    line-height: 1.3em;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.testimonial{
+    margin:100px auto;
+}
+.testimonial h3{
+    font-size: 2.4rem;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.testimonial-box{
+    width: 21%;
+    text-align: center;
+}
+.testimonial-box img{
+    margin: 20px auto;
+    border-radius: 50px;
+}
+.contact{
+    background-color: #8FB399;
+}
+.inner-contact-container{
+    width: 70%;
+    margin: auto;
+    padding: 80px 40px;
+}
+.contact-heading h3{
+    font-size: 2.4rem;
+    line-height: 1.5em;
+    margin-bottom: .2em;
+    color: #fff;
+}
+.contact-heading p{
+    font-size: 1.4em;
+    line-height: 1.9em;
+    color: #eee
+}
+.input{
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+}
+.textarea{
+    height: 100px;
+}
+.send{
+    background-color: #FF8900;
+}
+@media only screen and (max-width: 1080px){
+    .showcase .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+    } 
+    .showcase .container .heading{
+        margin-bottom: 1em;
+    }
+    .heading h2{
+        font-size: 3em;
+    }
+
+    .work{
+        flex-direction: column;
+    }
+    .work img{
+        width: 90%;
+    }
+    .work-card1, .work-card2, .work-card3{
+        width: 90%;
+    }
+    .testimonials{
+        display: block;
+        flex-direction: column;
+    }
+    .testimonial-box{
+        width: 45%;
+        margin:40px auto;
+        text-align: center;
+    }
+    .work div{
+        order: 1;
+    }
+    .work img{
+        order: 2;
+    }
+    .inner-contact-container{
+        width: 100%;
+        margin: auto;
+        padding: 80px 40px;
+    }
+}
+@media only screen and (max-width: 768px)  {
+    
+    .heading{
+        width: 100%;
+    }
+    .showcase .container .heading{
+        margin-bottom: 1em;
+    }
+    .heading h2{
+        font-size: 2.5em;
+    }
+
+    .work img{
+        width: 100%;
+    }
+    .services{
+        margin: 70px auto;
+        display: block;
+    }
+    .service{
+        width: 100%;
+    }
+    .work-card1, .work-card2, .work-card3{
+        width: 100%;
+    }
+    .call-to-action-two .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .call-to-action-two .container h5{
+        width: 100%;
+        font-size: 2rem;
+    }
+    .call-to-action-two .container .call-to-action{
+        margin-top: 1em;
+    }
+    .about-us{
+        display: block;
+    }
+    .about-us .about-left{
+        width: 100%;
+    }
+    .about-us .about-right{
+        width: 100%;
+    }
+    .about-left h3{
+        font-size: 2.3rem;
+    }
+    .testimonials{
+        display: block;
+        flex-direction: column;
+    }
+    .testimonial-box{
+        width: 90%;
+        margin:40px auto;
+        text-align: center;
+    }
+    .work div{
+        order: 1;
+    }
+    .work img{
+        order: 2;
+    }
+    .our-work .container h3{
+        font-size: 2.3rem;
+        margin-bottom: 0;
+        line-height: .8em;
+    }
+    .work{
+        margin: 10px 0;
+    }
+    .inner-contact-container{
+        width: 100%;
+        margin: auto;
+        padding: 80px 0px;
+    }
+}
